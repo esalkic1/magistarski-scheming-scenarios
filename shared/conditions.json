@@ -1,0 +1,18 @@
+[
+  {
+    "persona": "neutral",
+    "language": "EN"
+  },
+  {
+    "persona": "assertive",
+    "language": "EN"
+  },
+  {
+    "persona": "neutral",
+    "language": "BS"
+  },
+  {
+    "persona": "assertive",
+    "language": "BS"
+  }
+]

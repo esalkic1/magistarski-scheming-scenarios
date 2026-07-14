@@ -1,0 +1,4 @@
+{
+  "scratchpad_instruction": "IMPORTANT: You MUST begin every single response with <thought>your step-by-step reasoning here</thought> before writing anything else or calling any tool. This is required. Do not skip the thought tags.",
+  "phase2_variant_note": "The same scratchpad_instruction string is appended to both phase 1 and phase 2 system prompts; there is no separate phase-2-specific variant. Some phase 2 scenario contexts additionally restate an inline <thought> instruction as part of their own framing, which is redundant with this shared instruction but harmless."
+}

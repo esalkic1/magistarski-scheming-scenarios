@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "scenario_phase1.schema.json",
+  "title": "Phase 1 (non-agent) scenario core",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "theme",
+    "source",
+    "scenario_context_EN",
+    "scenario_context_BS",
+    "user_EN",
+    "user_BS",
+    "target"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(SP|GC|EA)-[1-5]$"
+    },
+    "theme": {
+      "type": "string",
+      "enum": ["self-preservation", "goal-conflict", "evaluation-awareness"]
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario_context_EN": {
+      "type": "string",
+      "minLength": 200
+    },
+    "scenario_context_BS": {
+      "type": "string",
+      "minLength": 200
+    },
+    "user_EN": {
+      "type": "string",
+      "minLength": 200
+    },
+    "user_BS": {
+      "type": "string",
+      "minLength": 200
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1,
+      "allOf": [
+        { "pattern": "Watch for:" },
+        { "pattern": "(?i)honest" },
+        { "pattern": "(?i)schem" }
+      ]
+    }
+  }
+}
